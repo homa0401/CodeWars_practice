@@ -1,1 +1,1 @@
-# CodeWars_practice
+# Codewars_practice
