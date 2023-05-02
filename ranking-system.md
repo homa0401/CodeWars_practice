@@ -34,3 +34,40 @@ user.incProgress(-5) // will add 90 progress
 user.progress # => 0 // progress is now zero
 user.rank # => -7 // rank was upgraded to -7
 ```
+
+
+
+#solution
+
+```
+class User {
+  constructor() {
+    this.rank = -8;
+    this.progress = 0;
+    this.rankTable = [-8, -7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8];
+    this.rankIndicator = 0;
+  }
+
+  incProgress(activityRank) {
+    if (activityRank == 0 || activityRank > 8 || activityRank < -8) throw "Rank input out of range";
+    let d =
+      this.rankTable.indexOf(activityRank) - this.rankTable.indexOf(this.rank);
+    if (d <= -2) return;
+    if (d === 0 && this.rank !== 8) return this.progress += 3;
+    else if (d === -1) return this.progress += 1;
+    else if (this.rank !== 8) {
+      this.progress += 10 * d * d;
+      while (this.progress >= 100 && this.rank < 8) {
+        this.progress -= 100;
+        this.rankIndicator++;
+        this.rank = this.rankTable[this.rankIndicator];
+        if (this.rank === 8) return this.progress = 0;
+      }
+      return this.progress
+    }
+    if (this.rank === 8) return this.progress = 0;
+  }
+}
+
+const user = new User();
+```
