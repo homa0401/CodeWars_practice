@@ -39,7 +39,7 @@ user.rank # => -7 // rank was upgraded to -7
 
 # solution
 
-```
+```javascript
 class User {
   constructor() {
     this.rank = -8;
