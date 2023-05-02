@@ -17,11 +17,11 @@ Completing an activity that is ranked one ranking lower than the user's will be 
 Any activities completed that are ranking 2 levels or more lower than the user's ranking will be ignored
 Completing an activity ranked higher than the current user's rank will accelerate the rank progression. The greater the difference between rankings the more the progression will be increased. The formula is 10 * d * d where d equals the difference in ranking between the activity and the user.
 Logic Examples:
--If a user ranked -8 completes an activity ranked -7 they will receive 10 progress
--If a user ranked -8 completes an activity ranked -6 they will receive 40 progress
--If a user ranked -8 completes an activity ranked -5 they will receive 90 progress
--If a user ranked -8 completes an activity ranked -4 they will receive 160 progress, resulting in the user being upgraded to rank -7 and having earned 60 progress towards their next rank
--If a user ranked -1 completes an activity ranked 1 they will receive 10 progress (remember, zero rank is ignored)
+- If a user ranked -8 completes an activity ranked -7 they will receive 10 progress
+- If a user ranked -8 completes an activity ranked -6 they will receive 40 progress
+- If a user ranked -8 completes an activity ranked -5 they will receive 90 progress
+- If a user ranked -8 completes an activity ranked -4 they will receive 160 progress, resulting in the user being upgraded to rank -7 and having earned 60 progress towards their next rank
+- If a user ranked -1 completes an activity ranked 1 they will receive 10 progress (remember, zero rank is ignored)
 
 Code Usage Examples:
 
