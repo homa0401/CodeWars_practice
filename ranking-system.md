@@ -37,7 +37,7 @@ user.rank # => -7 // rank was upgraded to -7
 
 
 
-#solution
+# solution
 
 ```
 class User {
