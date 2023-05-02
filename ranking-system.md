@@ -24,7 +24,7 @@ Logic Examples:
 - If a user ranked -1 completes an activity ranked 1 they will receive 10 progress (remember, zero rank is ignored)
 
 Code Usage Examples:
-```
+```javascript
 var user = new User()
 user.rank // => -8
 user.progress // => 0
