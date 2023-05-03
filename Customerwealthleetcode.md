@@ -42,3 +42,10 @@ n == accounts[i].length
 1 <= m, n <= 50
 1 <= accounts[i][j] <= 100
 ```
+
+# Solution
+```Javascript
+function welath(a) {
+  return Math.max(...a.map((a, i) => a.reduce((a, c) => a + c)));
+}
+```
