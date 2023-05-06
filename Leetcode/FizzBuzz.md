@@ -1,4 +1,4 @@
-# Fizz Buzz
+# [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)
 
 Given an integer n, return a string array answer (1-indexed) where:
 
